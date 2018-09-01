@@ -1,17 +1,20 @@
+#Password verification method
+# Conditions:
+    # Password OK if :
+    #     1+ cap letter
+    #     1+ lowercase letter
+    #     1 number between 0-9
+    #     1 spec carac between $ & or @
+    #     length min: 6 carac
+    #     Length max: 12 carac
+
+
 #!/usr/bin/env python3
 import re
 
-password = raw_input("Choisir un mot de passe: ")
+password = raw_input("Choose a password / Choisir un mot de passe: ")
 print password
 
-# Verifier 'password'
-    # Password OK si :
-    #     1 lettre majuscule ou plus
-    #     1 lettre minuscule ou plus
-    #     1 chiffre entre 0 et 9
-    #     1 caractere special entre $ & ou @
-    #     Longueur min: 6 carac
-    #     Longueur max: 12 carac
 
 def password_check(password):
   print("checking...")
@@ -31,12 +34,13 @@ def password_check(password):
       elif re.search("\s",password):
           break
       else:
-          print("Mot de passe valide")
+          print("Valid password / Mot de passe valide")
           i = False
           break
 
   if i:
-    print("Mot de passe invalide")
+    print("Invalid password / Mot de passe invalide")
+
 
 password_check(password)
 

@@ -1,3 +1,5 @@
+#------------1st Option, using urlib------------#
+
 import urllib
 
 def connected(host='http://google.com'):
@@ -9,7 +11,9 @@ def connected(host='http://google.com'):
 
 print( 'connected' if connected() else 'no internet!' )
 
-# Working but not displaying the right message
+
+#------------2nd Option WIP-------------------#
+# Working (registering a ping) but can't find a way to display the string
 
 # import os, sys
 
