@@ -8,8 +8,6 @@
     #     length min: 6 carac
     #     Length max: 12 carac
 
-
-#!/usr/bin/env python3
 import re
 
 password = raw_input("Choose a password / Choisir un mot de passe: ")

@@ -2,17 +2,18 @@
 # (1 is not considered a prime number by convention)
 
 def isprime(n):
-  n = abs(int(n))
+  n = abs(n) # Used Abs for the absolute value of a number. Had to research it, did not know beforehand
+
   if n < 2:
     return False
 
   if n == 2:
     return True
 
-  if not n & 1:
+  if not n & 1: # all other even numbers are not primes (had to research it)
     return False
 
-  for x in range(3, int(n**0.5)+1, 2):
+  for x in range(3, int(n**0.5)+1, 2): # Used ** Exponent. Had to research it, did not know beforehan
     if n % x == 0:
       return False
 

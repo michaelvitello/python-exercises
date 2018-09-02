@@ -1,5 +1,5 @@
-#Coordinate calculations
-#Using comparison methods
+# Coordinate calculations
+# Using comparison methods
 
 class Coordinate(object):
 
